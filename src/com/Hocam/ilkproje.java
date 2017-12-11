@@ -1,22 +1,22 @@
 package com.Hocam;
 
 public class ilkproje {
- 	// YENÄ° Ã–DEVLER 
+ 	// YENİ ÖDEVLER 
 	
 	//KOLAY SORULAR
-	//01- 20 den baÅŸlayarak 10 a kadar olan sayÄ±larÄ± ekrana yazdÄ±ran kod //for-while-do..while tÃ¼m dÃ¶ngÃ¼ yapÄ±larÄ±nda Ã§alÄ±ÅŸtÄ±rÄ±n
-	//02- KulanÄ±cÄ±dan iki sayÄ± girmesini bekleyen programÄ±n hangi sayÄ±nÄ±n bÃ¼yÃ¼k olduÄŸunu bulmasÄ± bekleniyor. Yani a>b ise ekrana a sayÄ±sÄ±nÄ± yazdÄ±rÄ±nÄ±z.
-	//03- 5 ten baÅŸlayarak 3 er artarak 20 ye kadar olan sayÄ±larÄ± yazdÄ±ran program.  5,8,11,14,17,20 yazacak.
-	//04- girilen sayÄ±nÄ±n nefatif mi pozitif mi olduÄŸunu bulan program.
-	//05- girilen 3 sayÄ±dan hangisinin bÃ¼yÃ¼k olduÄŸunu bulan kod.
+	//01- 20 den başlayarak 10 a kadar olan sayıları ekrana yazdıran kod //for-while-do..while tüm döngü yapılarında çalıştırın
+	//02- Kulanıcıdan iki sayı girmesini bekleyen programın hangi sayının büyük olduğunu bulması bekleniyor. Yani a>b ise ekrana a sayısını yazdırınız.
+	//03- 5 ten başlayarak 3 er artarak 20 ye kadar olan sayıları yazdıran program.  5,8,11,14,17,20 yazacak.
+	//04- girilen sayının nefatif mi pozitif mi olduğunu bulan program.
+	//05- girilen 3 sayıdan hangisinin büyük olduğunu bulan kod.
 	
 	
 	//ZOR SORULAR
-	//01- 9.000 den baÅŸlayarak 10.000 e kadar olan sayÄ±larÄ±n iÃ§inden tek ve Ã§ift sayÄ±larÄ± bulup toplamÄ±nÄ± ekrana yazdÄ±ran,
-	//02- 1 den 1.000 e kadar olan sayÄ±larÄ±n iÃ§indeki asal sayÄ±larÄ± bulan program.
-	//03- Ã¶ÄŸrenciden vize ve final notlarÄ±nÄ± alan ve ortalama notu hesaplayÄ±p. harf karÄ±ÅŸÄ±lÄ±ÄŸÄ±nÄ± bulan program. AA,AB.....FF 
-	//04- 3,1,33,12,6,90 sayÄ±larÄ±nÄ± kÃ¼Ã§Ã¼kten bÃ¼yÃ¼ÄŸe sÄ±ralayÄ±nÄ±z.
-	//05- yÄ±ldÄ±z simgesi kullanÄ±larak istenilen uzunlukta kare Ã§iziniz. mesela: 5 yÄ±ldÄ±z olsun
+	//01- 9.000 den başlayarak 10.000 e kadar olan sayıların içinden tek ve çift sayıları bulup toplamını ekrana yazdıran,
+	//02- 1 den 1.000 e kadar olan sayıların içindeki asal sayıları bulan program.
+	//03- öğrenciden vize ve final notlarını alan ve ortalama notu hesaplayıp. harf karışılığını bulan program. AA,AB.....FF 
+	//04- 3,1,33,12,6,90 sayılarını küçükten büyüğe sıralayınız.
+	//05- yıldız simgesi kullanılarak istenilen uzunlukta kare çiziniz. mesela: 5 yıldız olsun
 	//  * * * * * 
 	//  *       *
 	//  *       *

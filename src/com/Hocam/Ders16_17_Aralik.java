@@ -2,10 +2,10 @@ package com.Hocam;
 
 public class Ders16_17_Aralik {
 
-	// Ä°ÅLENECEK KONULAR
-	//01- Switch Case yapÄ±sÄ±
-	//02- try-catch yapÄ±sÄ±
-	//03- String ve Math sÄ±nÄ±flarÄ±
-	//04- Basit diziler ve Ã‡ok boyutlu diziler - YetiÅŸirse iÅŸlenecek
+	// İŞLENECEK KONULAR
+	//01- Switch Case yapısı
+	//02- try-catch yapısı
+	//03- String ve Math sınıfları
+	//04- Basit diziler ve çok boyutlu diziler - Yetişirse işlenecek
 	
 }

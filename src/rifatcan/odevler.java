@@ -48,4 +48,89 @@ public class odevler
 			System.out.println(k);
 		}
 	}
+	
+	public void negpoz()
+	{
+		Scanner sayi = new Scanner(System.in);
+		
+		System.out.println("Lütfen Bir Sayý Giriniz.");
+		int girilensayi;
+		girilensayi = sayi.nextInt();
+		
+		if(girilensayi > 0)
+		{
+			System.out.println("Girdiðiniz Sayý Pozitiftir.");
+		}
+		else if(girilensayi < 0)
+		{
+			System.out.println("Girdiðiniz Sayý Negatifdir.");
+		}
+		else 
+		{
+			System.out.println("Sayý 0'dýr.");
+		}
+	}
+	
+	public void sayigir()
+	
+	{
+		Scanner sgir = new Scanner(System.in);
+		
+		int sayi1 , sayi2 , sayi3;
+		System.out.println("Lütfen Birinci Sayýyý Giriniz...");
+		sayi1 = sgir.nextInt();
+		System.out.println("Lütfen Ýkinci Sayýyý Giriniz...");
+		sayi2 = sgir.nextInt();
+		System.out.println("Lütfen Üçüncü Sayýyý Giriniz...");
+		sayi3 = sgir.nextInt();
+		
+		if(sayi1 < sayi2 )
+		{
+			System.out.println("Sayi1 Sayi2'den Küçüktür.");
+		}
+		else if (sayi1 < sayi3)
+		{
+			System.out.println("Sayi1 Sayi3'ten Küçüktür.");
+		}
+		else if (sayi2 < sayi1)
+		{
+			System.out.println("Sayi2 Sayi1'den Küçüktür.");
+		}
+		else if (sayi2 < sayi3)
+		{
+			System.out.println("Sayi2 Sayi3'den Küçüktür.");
+		}
+		else if (sayi3 < sayi1)
+		{
+			System.out.println("Sayi3 Sayi1'den Küçüktür.");
+		}
+		else if (sayi3 < sayi2)
+		{
+			System.out.println("Sayi3 Sayi2'den Küçüktür.");
+		}
+		else if(sayi1 > sayi2 )
+		{
+			System.out.println("Sayi1 Sayi2'den Büyüktür.");
+		}
+		else if (sayi1 > sayi3)
+		{
+			System.out.println("Sayi1 Sayi3'ten Büyüktür.");
+		}
+		else if (sayi2 > sayi1)
+		{
+			System.out.println("Sayi2 Sayi1'den Büyüktür.");
+		}
+		else if (sayi2 > sayi3)
+		{
+			System.out.println("Sayi2 Sayi3'den Büyüktür.");
+		}
+		else if (sayi3 > sayi1)
+		{
+			System.out.println("Sayi3 Sayi1'den Büyüktür.");
+		}
+		else if (sayi3 > sayi2)
+		{
+			System.out.println("Sayi3 Sayi2'den Büyüktür.");
+		}
+	}
 }

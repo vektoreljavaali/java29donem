@@ -22,7 +22,9 @@ public class runner {
 		//gir.sayiTahmin();
 		//yap.sayısay();
 		//yap.kullanici();
-		yap.beserbser();
+		//yap.beserbser();
+		//yap.negpoz();
+		yap.sayigir();
 		
 	}
 

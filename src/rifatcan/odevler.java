@@ -41,6 +41,8 @@ public class odevler
 		}
 	}
 	
+	
+	//5 ten baþlamýþ ama ücer artacak
 	public void beserbser()
 	{
 		for (int k = 5; k <= 20; k+=5) 
@@ -71,6 +73,7 @@ public class odevler
 		}
 	}
 	
+	// Hangi sayýnýn büyük olduðunu bulacak. yani en büyük sayý þudur diyecek. bunu üzerinde biraz daha çalýþ
 	public void sayigir()
 	
 	{

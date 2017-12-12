@@ -43,7 +43,7 @@ public class odevler
 	
 	public void beserbser()
 	{
-		for (int k = 5; k <= 20; k+=5) 
+		for (int k = 5; k <= 20; k+=3) 
 		{
 			System.out.println(k);
 		}
@@ -72,65 +72,94 @@ public class odevler
 	}
 	
 	public void sayigir()
+
 	
 	{
 		Scanner sgir = new Scanner(System.in);
 		
-		int sayi1 , sayi2 , sayi3;
-		System.out.println("Lütfen Birinci Sayýyý Giriniz...");
-		sayi1 = sgir.nextInt();
-		System.out.println("Lütfen Ýkinci Sayýyý Giriniz...");
-		sayi2 = sgir.nextInt();
-		System.out.println("Lütfen Üçüncü Sayýyý Giriniz...");
-		sayi3 = sgir.nextInt();
 		
-		if(sayi1 < sayi2 )
+		System.out.println("Lütfen 1. Sayýyý Giriniz...");
+		int sayi1 = sgir.nextInt();
+		System.out.println("Lütfen 2. Sayýyý Giriniz...");
+		int sayi2 = sgir.nextInt();
+		System.out.println("Lütfen 3. Sayýyý Giriniz...");
+		int sayi3 = sgir.nextInt();
+		
+		int buyuksayi;
+		
+		if(sayi1 > sayi2 && sayi1 > sayi3)
 		{
-			System.out.println("Sayi1 Sayi2'den Küçüktür.");
+			buyuksayi = sayi1;
 		}
-		else if (sayi1 < sayi3)
+		else if (sayi2 > sayi1 && sayi2 > sayi3)
 		{
-			System.out.println("Sayi1 Sayi3'ten Küçüktür.");
+			buyuksayi = sayi2;	
 		}
-		else if (sayi2 < sayi1)
+		else
 		{
-			System.out.println("Sayi2 Sayi1'den Küçüktür.");
+			buyuksayi = sayi3;
 		}
-		else if (sayi2 < sayi3)
+		System.out.println("En Büyük Sayý : " + buyuksayi);
+	}
+	
+	//ZOR SORULAR
+	//01- 9.000 den baþlayarak 10.000 e kadar olan sayýlarýn içinden tek ve çift sayýlarý bulup toplamýný ekrana yazdýran,
+	//02- 1 den 1.000 e kadar olan sayýlarýn içindeki asal sayýlarý bulan program.
+	//03- öðrenciden vize ve final notlarýný alan ve ortalama notu hesaplayýp. harf karýþýlýðýný bulan program. AA,AB.....FF 
+	//04- 3,1,33,12,6,90 sayýlarýný küçükten büyüðe sýralayýnýz.
+	//05- yýldýz simgesi kullanýlarak istenilen uzunlukta kare çiziniz. mesela: 5 yýldýz olsun
+	//  * * * * * 
+	//  *       *
+	//  *       *
+	//  *       *
+	//  * * * * *
+	// Baþarýlar
+	
+	public void tekcift()
+	{
+		
+		int tek = 0 , cift = 0;
+		
+		
+		for (int i = 9000; i <= 10000; i++) 
 		{
-			System.out.println("Sayi2 Sayi3'den Küçüktür.");
-		}
-		else if (sayi3 < sayi1)
-		{
-			System.out.println("Sayi3 Sayi1'den Küçüktür.");
-		}
-		else if (sayi3 < sayi2)
-		{
-			System.out.println("Sayi3 Sayi2'den Küçüktür.");
-		}
-		else if(sayi1 > sayi2 )
-		{
-			System.out.println("Sayi1 Sayi2'den Büyüktür.");
-		}
-		else if (sayi1 > sayi3)
-		{
-			System.out.println("Sayi1 Sayi3'ten Büyüktür.");
-		}
-		else if (sayi2 > sayi1)
-		{
-			System.out.println("Sayi2 Sayi1'den Büyüktür.");
-		}
-		else if (sayi2 > sayi3)
-		{
-			System.out.println("Sayi2 Sayi3'den Büyüktür.");
-		}
-		else if (sayi3 > sayi1)
-		{
-			System.out.println("Sayi3 Sayi1'den Büyüktür.");
-		}
-		else if (sayi3 > sayi1)
-		{
-			System.out.println("Sayi3 Sayi2'den Büyüktür.");
+			if(i%2==0)
+			{
+				cift = cift + i;
+				System.out.println("Çift Sayýlarýn Toplamý : " + cift);
+				
+			}
+			else
+			{
+				tek = tek + i;
+				System.out.println("Tek Sayýlarýn Toplamý : " + tek);
+			}
+			
+			
 		}
 	}
+	
+	public void harfnotu()
+	{
+		Scanner vf = new Scanner(System.in);
+		int vize , fnl , ortalama = 0 ;
+		
+		System.out.println("Lüften Vize Notunu Giriniz...");
+		vize = vf.nextInt();
+		System.out.println("Lütfen Final Notunu Giriniz...");
+		fnl = vf.nextInt();
+		
+		ortalama = (vize + fnl) / 2;
+		
+		if(ortalama >= 85)
+		{
+			System.out.println("Haft Notu Aralýðý : AA ");
+		}
+		else if (85 > ortalama && ortalama >= 70)
+		{
+			System.out.println("Haft Notu Aralýðý : BA ");
+		}
+	}
+	
+	
 }

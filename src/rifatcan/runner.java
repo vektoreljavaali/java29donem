@@ -24,7 +24,9 @@ public class runner {
 		//yap.kullanici();
 		//yap.beserbser();
 		//yap.negpoz();
-		yap.sayigir();
+		//yap.sayigir();
+		//yap.tekcift();
+		yap.harfnotu();
 		
 	}
 

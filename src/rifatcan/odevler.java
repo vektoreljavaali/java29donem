@@ -128,7 +128,7 @@ public class odevler
 		{
 			System.out.println("Sayi3 Sayi1'den Büyüktür.");
 		}
-		else if (sayi3 > sayi2)
+		else if (sayi3 > sayi1)
 		{
 			System.out.println("Sayi3 Sayi2'den Büyüktür.");
 		}

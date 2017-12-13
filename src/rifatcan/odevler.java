@@ -153,11 +153,15 @@ public class odevler
 		
 		if(ortalama >= 85)
 		{
-			System.out.println("Haft Notu Aralýðý : AA ");
+			System.out.println("Harf Notu Aralýðý : AA ");
 		}
 		else if (85 > ortalama && ortalama >= 70)
 		{
-			System.out.println("Haft Notu Aralýðý : BA ");
+			System.out.println("Harf Notu Aralýðý : BA ");
+		}
+		else if (70 > ortalama && ortalama >= 60)
+		{
+			System.out.println("Harf Notu Aralýðý : BB");
 		}
 	}
 	

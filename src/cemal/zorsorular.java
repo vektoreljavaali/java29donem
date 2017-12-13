@@ -37,7 +37,6 @@ public class zorsorular {
 			if (sayi == 0)
 				System.out.println(+i);
 		}
-
 	}
 
 	public void kare(int cevre) {

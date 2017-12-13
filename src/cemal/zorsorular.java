@@ -51,6 +51,5 @@ public class zorsorular {
 			}
 			System.out.println();
 		}
-
 	}
 }

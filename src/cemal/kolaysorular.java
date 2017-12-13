@@ -62,7 +62,7 @@ public class kolaysorular {
 		} else {
 			System.out.println("Sifir.");
 		}
-	}// Durum Parantez
+	}// Durum Parantez 
 
 	public static int BuyukSayi(int sayi1, int sayi2, int sayi3) {
 		int Buyuk;

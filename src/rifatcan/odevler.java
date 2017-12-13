@@ -166,6 +166,10 @@ public class odevler
 		{
 			System.out.println("Harf Notu Aralýðý : BB");
 		}
+		else if (60 > ortalama && ortalama >= 50)
+		{
+			System.out.println("Harf Notu Aralýðý : CC");
+		}
 	}
 	
 	

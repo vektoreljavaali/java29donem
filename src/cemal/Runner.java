@@ -31,6 +31,14 @@ public class Runner {
 		sayi3 = SayiGir.nextInt();
 		int sonuc = metod.BuyukSayi(sayi1, sayi2, sayi3);
 		System.out.println("En buyuk sayi: " + sonuc);
+		
+		
+		System.out.println("Zor Sorular Kismi");
+		zorsorular metod2=new zorsorular();
+		metod2.TekSayilar();
+		metod2.CiftSayilar();
+		metod2.AsalSayilar();
+		metod2.kare(5);
 	}
 
 }

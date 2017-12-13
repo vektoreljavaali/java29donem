@@ -7,7 +7,6 @@ public class zorsorular {
 		int toplam = 0;
 		for (i = 9000; i < 10000; i++) {
 			if (i % 2 == 1) {
-				// System.out.println(i);
 				toplam = toplam + i;
 			}
 		}

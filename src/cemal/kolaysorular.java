@@ -77,7 +77,3 @@ public class kolaysorular {
 		return Buyuk;
 	}// Buyuk Sayi
 }
-//sifre dogru  şifre ile alakalı bir durum değil bence aynı sorunu yaşadım nasıl çözdüm 
-//hatırlamıyorum şimdi. tekrar bakalmı.
-// şöyle yapalım
-// senin kodlamaları başka bir projeye çekelim olu r bu  projeyi slip tekrar deneyelim

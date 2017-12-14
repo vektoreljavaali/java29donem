@@ -7,6 +7,7 @@ public class runner {
 		operatorler islem = new operatorler();
 		kosullar gir = new kosullar();
 		odevler yap = new odevler();
+		denemeler dene = new denemeler();
 		/*islem.toplama();
 		islem.toplamaDegiskenli(20, 40);
 		System.out.println(islem.toplamaGeriDondurme());
@@ -26,8 +27,12 @@ public class runner {
 		//yap.negpoz();
 		//yap.sayigir();
 		//yap.tekcift();
-		yap.harfnotu();
-		
+		//yap.harfnotu();
+		//dene.soru1();
+		//dene.soru2();
+		//dene.soru3();
+		//dene.soru4();
+		yap.kareciz();
 	}
 
 }

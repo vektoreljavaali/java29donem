@@ -172,5 +172,25 @@ public class odevler
 		}
 	}
 	
-	
+	public void kareciz()
+	{
+		Scanner kare = new Scanner(System.in);
+		int yukseklik , genislik;
+		System.out.println("Lütfen Yükseklik Giriniz...");
+		yukseklik = kare.nextInt();
+		System.out.println("Lütfen Geniþlik Giriniz...");
+		genislik = kare.nextInt();
+		
+		for(int i = 0; i <= yukseklik ; i++)
+		{
+			for(int k = 0; k <= genislik ; k++)
+			{
+				if(i==0 || i == yukseklik || k==0 || k == genislik )
+					System.out.print("*");
+				else
+					System.out.print(" ");
+			}
+				System.out.println(" ");
+		}
+	}
 }

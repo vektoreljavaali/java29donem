@@ -32,9 +32,10 @@ public class runner {
 		//dene.soru3();
 		//dene.soru4();
 		//yap.kareciz();
-		yap.sayisayfor();
-		yap.sayisaywhile();
-		yap.siyisaydowhile();
+		//yap.sayisayfor();
+		//yap.sayisaywhile();
+		//yap.siyisaydowhile();
+		yap.AsalSayi();
 	}
 
 }

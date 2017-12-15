@@ -24,7 +24,8 @@ public class odevler
 	public void sayisaywhile()
 	{
 				int k = 20;
-				while (k >= 10) {
+				while (k >= 10) 
+				{
 					System.out.println(k);
 					k--;
 				}
@@ -34,7 +35,8 @@ public class odevler
 	public void siyisaydowhile()
 	{
 				int r = 20;
-				do {
+				do 
+				{
 					System.out.println(r);
 					r--;
 
@@ -159,6 +161,22 @@ public class odevler
 			}
 			
 			
+		}
+	}
+	
+	public void AsalSayi() 
+	{
+		int sayi = 0;
+		for (int i = 2; i <= 1000; i++) 
+		{
+			sayi = 0;
+			for (int r = 2; r <= i / 2; r++) 
+			{
+				if (i % r == 0)
+					sayi++;
+			}
+			if (sayi == 0)
+				System.out.println(+i);
 		}
 	}
 	

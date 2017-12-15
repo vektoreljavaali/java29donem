@@ -21,7 +21,6 @@ public class runner {
 		islem.modalmaDegiskenli(90, 20);
 		System.out.println(islem.modalmaGeriDondurme());*/
 		//gir.sayiTahmin();
-		//yap.sayýsay();
 		//yap.kullanici();
 		//yap.beserbser();
 		//yap.negpoz();
@@ -32,7 +31,10 @@ public class runner {
 		//dene.soru2();
 		//dene.soru3();
 		//dene.soru4();
-		yap.kareciz();
+		//yap.kareciz();
+		yap.sayisayfor();
+		yap.sayisaywhile();
+		yap.siyisaydowhile();
 	}
 
 }

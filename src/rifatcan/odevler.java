@@ -13,12 +13,32 @@ public class odevler
 		//04- girilen sayýnýn nefatif mi pozitif mi olduðunu bulan program.
 		//05- girilen 3 sayýdan hangisinin büyük olduðunu bulan kod.
 	
-	public void sayýsay()
+	public void sayisayfor()
 	{
 		for (int i = 20; i >=10; i--) 
 		{
 			System.out.println(i);
 		}
+	}
+	
+	public void sayisaywhile()
+	{
+				int k = 20;
+				while (k >= 10) {
+					System.out.println(k);
+					k--;
+				}
+
+	}
+	
+	public void siyisaydowhile()
+	{
+				int r = 20;
+				do {
+					System.out.println(r);
+					r--;
+
+				} while (r >= 10);
 	}
 	
 	public void kullanici()

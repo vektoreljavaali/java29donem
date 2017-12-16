@@ -1,5 +1,7 @@
 package com.Hocam;
 
+import java.util.Scanner;
+
 public class ilkproje {
  	// YENÝ ÖDEVLER 
 	
@@ -23,5 +25,24 @@ public class ilkproje {
 	//  *       *
 	//  * * * * *
 	// Baþarýlar
+	
+	public static void main(String[] args) {
+		
+		TarihUygulamalari th = new TarihUygulamalari();
+	//	System.out.println(th.HaftaninGununuGetir());
+		String kullaniciGirisMetni="";
+		String computerCevabi="";
+		Scanner sc = new Scanner(System.in);
+		do {
+			System.out.println("Konuþma Metni: ");
+			kullaniciGirisMetni = sc.nextLine();
+			computerCevabi = th.KonusmaSimulasyonu(kullaniciGirisMetni);
+			System.out.println(computerCevabi);			
+		} while (!computerCevabi.equals("Computer: size de iyi günler dilerim."));
+		 
+	}
+	
+	
+	
 	
 }

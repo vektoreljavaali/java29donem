@@ -1,4 +1,6 @@
-package com.rifatCan;
+package com.rifatcan;
+
+import java.util.Scanner;
 
 public class runner {
 
@@ -8,6 +10,7 @@ public class runner {
 		kosullar gir = new kosullar();
 		odevler yap = new odevler();
 		denemeler dene = new denemeler();
+		switchcaseYapýsý sc = new switchcaseYapýsý();
 		/*islem.toplama();
 		islem.toplamaDegiskenli(20, 40);
 		System.out.println(islem.toplamaGeriDondurme());
@@ -35,7 +38,19 @@ public class runner {
 		//yap.sayisayfor();
 		//yap.sayisaywhile();
 		//yap.siyisaydowhile();
-		yap.AsalSayi();
+		//yap.AsalSayi();
+		//sc.haftanýngunleri();
+		
+		System.out.println(sc.haftanýngununubulma());
+		String kullaniciGirisMetni="";
+		String computerCevabi="";
+		Scanner scan = new Scanner(System.in);
+		do {
+			System.out.println("Konuþma Metni: ");
+			kullaniciGirisMetni = scan.nextLine();
+			computerCevabi = sc.KonusmaSimulasyonu(kullaniciGirisMetni);
+			System.out.println(computerCevabi);			
+		} while (!computerCevabi.equals("Computer: size de iyi günler dilerim."));
 	}
 
 }

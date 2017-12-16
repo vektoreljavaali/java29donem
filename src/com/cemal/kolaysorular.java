@@ -1,4 +1,4 @@
-package cemal;
+package com.cemal;
 
 import java.util.Scanner;
 

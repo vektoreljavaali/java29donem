@@ -1,4 +1,4 @@
-package SerkanKaplan;
+package com.serkan;
 
 import java.util.Scanner;
 

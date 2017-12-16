@@ -1,4 +1,4 @@
-package rifatcan;
+package com.rifatCan;
 
 import java.util.Scanner;
 

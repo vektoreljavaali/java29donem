@@ -11,6 +11,10 @@ public class runner {
 		odevler yap = new odevler();
 		denemeler dene = new denemeler();
 		switchcaseYapýsý sc = new switchcaseYapýsý();
+		diziler dc = new diziler();
+		
+		dc.tekboyutludiziler();
+	
 		/*islem.toplama();
 		islem.toplamaDegiskenli(20, 40);
 		System.out.println(islem.toplamaGeriDondurme());
@@ -41,7 +45,7 @@ public class runner {
 		//yap.AsalSayi();
 		//sc.haftanýngunleri();
 		
-		System.out.println(sc.haftanýngununubulma());
+		/*System.out.println(sc.haftanýngununubulma());
 		String kullaniciGirisMetni="";
 		String computerCevabi="";
 		Scanner scan = new Scanner(System.in);
@@ -50,7 +54,7 @@ public class runner {
 			kullaniciGirisMetni = scan.nextLine();
 			computerCevabi = sc.KonusmaSimulasyonu(kullaniciGirisMetni);
 			System.out.println(computerCevabi);			
-		} while (!computerCevabi.equals("Computer: size de iyi günler dilerim."));
+		} while (!computerCevabi.equals("Computer: size de iyi günler dilerim."));*/
 	}
 
 }

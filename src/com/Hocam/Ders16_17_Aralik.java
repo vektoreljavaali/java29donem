@@ -1,4 +1,4 @@
-package com.Hocam;
+ package com.Hocam;
 
 import java.util.Scanner;
 

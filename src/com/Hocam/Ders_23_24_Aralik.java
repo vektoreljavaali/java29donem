@@ -1,8 +1,9 @@
 package com.Hocam;
 
-public class Ders_23_24_Aralik {
-
-	//                  ÖDEV
+public class Ders_23_24_Aralik 
+{
+	// Yanlýþlýkla Ezilen Class
+	// ÖDEV
 	// 1- Kullanýcýdan doðum tarihini(YIL) girmesini isteyeceksiniz, <güncel tarihin Yýlýný alan kodu Bulun> yýlý sabit bir deðiþkene atayýn
 	//    kiþinin girdiði deðer geçerli bir tarih deðil ise yada sözel bir ifade girmiþ ise kiþiye UYARI metni gösterin ve doðum tarihini 
 	//    tekrar girmesini isteyin. Giriþ doðru yapýldý ise kiþinin yaþý 18 den küçük ise Yaþýnýz reþit deðildir yazacak. 18 de büyük ise 

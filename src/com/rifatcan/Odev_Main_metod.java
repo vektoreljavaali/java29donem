@@ -6,7 +6,9 @@ public class Odev_Main_metod {
 	{
 		Odev_23_24_Aralik od = new Odev_23_24_Aralik();
 		
-		od.yýlkriteri();
+		//od.yýlkriteri();
+		//od.kelimeayir();
+		od.bunumudemekistediniz();
 
 	}
 

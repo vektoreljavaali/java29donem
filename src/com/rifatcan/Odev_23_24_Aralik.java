@@ -70,33 +70,62 @@ public class Odev_23_24_Aralik
 	
 	public void bunumudemekistediniz()
 	{
-		Scanner bul = new Scanner(System.in);
 		
-		String birincideger = "ekmek";
-		String ikincideger  = "portakal";
-		String ucuncudeger = "hayat";
-		String dorduncudeger = "program";
-		String besincideger = "robot";
-		
-		System.out.println("Kaç Kelime Girmek Ýstiyorsunuz.");
-		bul.nextInt();
-		
-		birincideger =bul.nextLine();
-		System.out.println("Lüften Birinci Kelimeyi Giriniz.");
-		ikincideger = bul.nextLine();
-		System.out.println("Lüften Ýkinci Kelimeyi Giriniz.");
-		ucuncudeger = bul.nextLine();
-		System.out.println("Lütfen Üçüncü Kelimeyi Giriniz.");
-		dorduncudeger = bul.nextLine();
-		System.out.println("Lütfen Dördüncü Kelimeyi Giriniz.");
-		besincideger = bul.nextLine();
-		System.out.println("Lütfen Beþinci Kelimeyi Giriniz.");
-		besincideger = bul.nextLine();
-		/*String dizi [] = new String[5];
-		dizi [0] = "greyfurt" ;
-		dizi [1] = "mandalina" ;
-		dizi [2] = "nar" ;
-		dizi [3] = "erik" ;
-		dizi [4] = "ananas" ;*/
-	}
+        System.out.println("Kac kelime girmek istiyorsunuz?");
+        Scanner sc = new Scanner(System.in);
+
+        int kelime_sayisi = sc.nextInt();
+
+        String[] kelimeler = new String[kelime_sayisi];
+
+        int[] masraflar = new int[kelime_sayisi];
+        int en_dusuk_masraf = 0;
+
+        for(int i = 0; i < kelime_sayisi; i++) 
+        {
+
+                System.out.println((i + 1) + ". kelimeyi giriniz: ");
+                sc = new Scanner(System.in);
+
+                kelimeler[i] = sc.nextLine();
+        }
+
+        System.out.println("Aradiginiz kelimeyi giriniz: ");
+        sc = new Scanner(System.in);
+
+        String aranan = sc.nextLine();
+
+        for(int i = 0; i < kelime_sayisi; i++) 
+        {
+
+            String kelime = kelimeler[i];
+            en_dusuk_masraf = 0;
+            // ayni uzunlukta mi?
+            if(aranan.length() == kelime.length())
+            {
+
+                for(int j = 0; j < aranan.length(); j++) 
+                {
+                    int c = 0;
+                    c += Math.abs(aranan.charAt(j) - kelime.charAt(j));
+                    masraflar[i] = c;
+                }
+
+            }
+
+        }
+
+        int c = masraflar[0];
+        int s = 0;
+        for(int i = 0; i < masraflar.length; i++) {
+            System.out.println("Masraf " + i + ": " + masraflar[i]);
+            if(masraflar[i] < c) {
+                c = masraflar[i];
+                s = i;
+            }
+        }
+
+        System.out.println("Bunu mu aramak istediniz? " + kelimeler[s]);
+
+    }
 }

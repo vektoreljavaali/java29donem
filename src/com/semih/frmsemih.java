@@ -6,6 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import javax.xml.bind.ParseConversionEvent;
 import javax.swing.JButton;
 import java.awt.Toolkit;
 import java.awt.Color;
@@ -33,8 +34,9 @@ public class frmsemih {
 	private JButton BtnCikar;
 	private JButton BtnBol;
 	private JButton BtnClear;
-	int s1=1,s2=1;
-	String op="+";
+	HMIslemler islem = new HMIslemler();
+	private int s1=1,s2=1;
+	private String op="+";
 
 	/**
 	 * Launch the application.
@@ -89,8 +91,16 @@ public class frmsemih {
 		Btnesittir.setBounds(330, 190, 80, 80);
 		Btnesittir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String girilentext = textField.getText();
-				JOptionPane.showMessageDialog(null, girilentext);
+				s1 = Integer.parseInt(textField.getText());
+				switch (op) {
+				case "+":textField.setText(islem.toplam(s1,s2)+"");    break;
+				case "-":     break;
+				case "*":     break;
+				case "/":     break;
+
+				default:
+					break;
+				}
 			}
 		});
 		Btnesittir.setBackground(new Color(248, 248, 255));
@@ -100,6 +110,7 @@ public class frmsemih {
 		Btn1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				textField.setText("1");
+				
 			}
 		});
 		Btn1.setBackground(new Color(248, 248, 255));
@@ -199,6 +210,8 @@ public class frmsemih {
 		BtnTopla = new JButton("Topla");
 		BtnTopla.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				s1 = Integer.parseInt(textField.getText());
+				op = "+";
 				
 			}
 		});
@@ -207,11 +220,23 @@ public class frmsemih {
 		frmAna.getContentPane().add(BtnTopla);
 		
 		BtnCarp = new JButton("\u00C7arp");
+		BtnCarp.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				s1 = Integer.parseInt(textField.getText());
+				op = "*";
+			}
+		});
 		BtnCarp.setBackground(new Color(248, 248, 255));
 		BtnCarp.setBounds(230, 170, 70, 40);
 		frmAna.getContentPane().add(BtnCarp);
 		
 		BtnCikar = new JButton("\u00C7\u0131kar");
+		BtnCikar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				s1 = Integer.parseInt(textField.getText());
+				op = "-";
+			}
+		});
 		BtnCikar.setBackground(new Color(248, 248, 255));
 		BtnCikar.setBounds(230, 110, 70, 40);
 		frmAna.getContentPane().add(BtnCikar);
@@ -219,6 +244,8 @@ public class frmsemih {
 		BtnBol = new JButton("B\u00F6l");
 		BtnBol.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				s1 = Integer.parseInt(textField.getText());
+				op = "/";
 			}
 		});
 		BtnBol.setBackground(new Color(248, 248, 255));

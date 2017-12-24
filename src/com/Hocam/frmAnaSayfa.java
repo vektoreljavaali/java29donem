@@ -21,7 +21,7 @@ public class frmAnaSayfa {
 	private JFrame frmAnaForm;
 	private JTextField textField;
 	HMIslemler islem = new HMIslemler();
-	 double s1=1,s2=1;
+	 double s1=1,s2=1,sonuc=1;
 	 String opr="+";
 	
 	/**
@@ -64,7 +64,8 @@ public class frmAnaSayfa {
 		frmAnaForm.getContentPane().add(lblNewLabel);
 		
 		textField = new JTextField();
-		textField.setBounds(49, 8, 184, 20);
+		textField.setEditable(false);
+		textField.setBounds(45, 8, 184, 20);
 		frmAnaForm.getContentPane().add(textField);
 		textField.setColumns(10);
 		
@@ -73,14 +74,14 @@ public class frmAnaSayfa {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			
-				s2 = Double.parseDouble(textField.getText().substring(1, textField.getText().length()));
+				s2 = Double.parseDouble(textField.getText());
 				switch (opr) {
-				case "+":textField.setText(islem.toplama(s1, s2)+"");	break;
-				case "-":textField.setText(islem.cikartma(s1, s2)+"");	break;
-				case "*":textField.setText(islem.carpma(s1, s2)+"");	break;
-				default :textField.setText(islem.bolme(s1, s2)+"");		break;
+				case "+":textField.setText(islem.toplama(s1, s2)+""); sonuc=islem.toplama(s1, s2);	break;
+				case "-":textField.setText(islem.cikartma(s1, s2)+"");sonuc=islem.cikartma(s1, s2);	break;
+				case "*":textField.setText(islem.carpma(s1, s2)+"");sonuc=islem.carpma(s1, s2);	break;
+				case "/" :textField.setText(islem.bolme(s1, s2)+"");sonuc=islem.bolme(s1, s2);		break;
 				}
-				
+				opr="=";
 			}
 		});
 		frmAnaForm.getContentPane().add(btnNewButton);
@@ -88,7 +89,7 @@ public class frmAnaSayfa {
 		JButton btn1 = new JButton("1");
 		btn1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText(textField.getText()+"1") ;
+				sayiGir("1");
 			}
 		});
 		btn1.setBounds(10, 56, 41, 23);
@@ -97,7 +98,7 @@ public class frmAnaSayfa {
 		JButton btn2 = new JButton("2");
 		btn2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText(textField.getText()+"2");
+				sayiGir("2");
 			}
 		});
 		btn2.setBounds(56, 56, 41, 23);
@@ -106,7 +107,7 @@ public class frmAnaSayfa {
 		JButton btn3 = new JButton("3");
 		btn3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText(textField.getText()+"3");
+				sayiGir("3");
 			}
 		});
 		btn3.setBounds(102, 56, 41, 23);
@@ -115,7 +116,7 @@ public class frmAnaSayfa {
 		JButton btn4 = new JButton("4");
 		btn4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText(textField.getText()+"4");
+				sayiGir("4");
 			}
 		});
 		btn4.setBounds(10, 92, 41, 23);
@@ -124,7 +125,7 @@ public class frmAnaSayfa {
 		JButton btn8 = new JButton("8");
 		btn8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText(textField.getText()+"8");
+				sayiGir("8");
 			}
 		});
 		btn8.setBounds(56, 126, 41, 23);
@@ -133,7 +134,7 @@ public class frmAnaSayfa {
 		JButton btn0 = new JButton("0");
 		btn0.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText(textField.getText()+"0");
+				sayiGir("0");
 			}
 		});
 		btn0.setBounds(56, 160, 41, 23);
@@ -142,7 +143,7 @@ public class frmAnaSayfa {
 		JButton btn7 = new JButton("7");
 		btn7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-			textField.setText(textField.getText()+"7");
+				sayiGir("7");
 			}
 			
 		});
@@ -152,7 +153,7 @@ public class frmAnaSayfa {
 		JButton btn6 = new JButton("6");
 		btn6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText(textField.getText()+"6");
+				sayiGir("6");
 			}
 		});
 		btn6.setBounds(102, 92, 41, 23);
@@ -161,7 +162,7 @@ public class frmAnaSayfa {
 		JButton btn5 = new JButton("5");
 		btn5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText(textField.getText()+"5");
+				sayiGir("5");
 			}
 		});
 		btn5.setBounds(56, 92, 41, 23);
@@ -214,7 +215,7 @@ public class frmAnaSayfa {
 		JButton btn9 = new JButton("9");
 		btn9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText(textField.getText()+"9");
+				sayiGir("9");
 			}
 		});
 		btn9.setBounds(102, 126, 41, 23);
@@ -244,5 +245,20 @@ public class frmAnaSayfa {
 		btnNewButton_3.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnNewButton_3.setBounds(10, 160, 41, 23);
 		frmAnaForm.getContentPane().add(btnNewButton_3);
+	}
+	
+	public void sayiGir(String sayi) {
+		
+		String EkranText = textField.getText();
+	
+		if(EkranText.equals("+")||EkranText.equals("-")||EkranText.equals("*")||EkranText.equals("/"))
+		EkranText = "";		
+		if(opr.equals("=")) { opr="+"; textField.setText(""); EkranText="";s1=sonuc;};
+		textField.setText(EkranText+sayi);
+		
+	}
+	
+	public void Operators(String oprator) {
+		
 	}
 }

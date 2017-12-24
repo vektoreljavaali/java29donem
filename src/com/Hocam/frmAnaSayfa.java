@@ -14,13 +14,14 @@ import java.awt.FlowLayout;
 import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Font;
 
 public class frmAnaSayfa {
 
 	private JFrame frmAnaForm;
 	private JTextField textField;
 	HMIslemler islem = new HMIslemler();
-	 int s1=1,s2=1;
+	 double s1=1,s2=1;
 	 String opr="+";
 	
 	/**
@@ -72,12 +73,12 @@ public class frmAnaSayfa {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			
-				s2 = Integer.parseInt(textField.getText());
+				s2 = Double.parseDouble(textField.getText().substring(1, textField.getText().length()));
 				switch (opr) {
 				case "+":textField.setText(islem.toplama(s1, s2)+"");	break;
-				case "-":				break;
-				case "*":				break;
-				default:				break;
+				case "-":textField.setText(islem.cikartma(s1, s2)+"");	break;
+				case "*":textField.setText(islem.carpma(s1, s2)+"");	break;
+				default :textField.setText(islem.bolme(s1, s2)+"");		break;
 				}
 				
 			}
@@ -96,7 +97,7 @@ public class frmAnaSayfa {
 		JButton btn2 = new JButton("2");
 		btn2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("2");
+				textField.setText(textField.getText()+"2");
 			}
 		});
 		btn2.setBounds(56, 56, 41, 23);
@@ -105,7 +106,7 @@ public class frmAnaSayfa {
 		JButton btn3 = new JButton("3");
 		btn3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("3");
+				textField.setText(textField.getText()+"3");
 			}
 		});
 		btn3.setBounds(102, 56, 41, 23);
@@ -114,7 +115,7 @@ public class frmAnaSayfa {
 		JButton btn4 = new JButton("4");
 		btn4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("4");
+				textField.setText(textField.getText()+"4");
 			}
 		});
 		btn4.setBounds(10, 92, 41, 23);
@@ -123,7 +124,7 @@ public class frmAnaSayfa {
 		JButton btn8 = new JButton("8");
 		btn8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("8");
+				textField.setText(textField.getText()+"8");
 			}
 		});
 		btn8.setBounds(56, 126, 41, 23);
@@ -132,16 +133,16 @@ public class frmAnaSayfa {
 		JButton btn0 = new JButton("0");
 		btn0.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("0");
+				textField.setText(textField.getText()+"0");
 			}
 		});
-		btn0.setBounds(10, 156, 41, 23);
+		btn0.setBounds(56, 160, 41, 23);
 		frmAnaForm.getContentPane().add(btn0);
 		
 		JButton btn7 = new JButton("7");
 		btn7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-			textField.setText("7");
+			textField.setText(textField.getText()+"7");
 			}
 			
 		});
@@ -151,7 +152,7 @@ public class frmAnaSayfa {
 		JButton btn6 = new JButton("6");
 		btn6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("6");
+				textField.setText(textField.getText()+"6");
 			}
 		});
 		btn6.setBounds(102, 92, 41, 23);
@@ -160,7 +161,7 @@ public class frmAnaSayfa {
 		JButton btn5 = new JButton("5");
 		btn5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("5");
+				textField.setText(textField.getText()+"5");
 			}
 		});
 		btn5.setBounds(56, 92, 41, 23);
@@ -169,7 +170,7 @@ public class frmAnaSayfa {
 		JButton btnTopla = new JButton("Topla");
 		btnTopla.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				s1 = Integer.parseInt(textField.getText());
+				s1 = Double.parseDouble(textField.getText());
 				opr = "+";
 				textField.setText("+");
 			}
@@ -180,8 +181,9 @@ public class frmAnaSayfa {
 		JButton btnCikart = new JButton("\u00C7\u0131kart");
 		btnCikart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				s1 = Integer.parseInt(textField.getText());
+				s1 = Double.parseDouble(textField.getText());
 				opr = "-";
+				textField.setText("-");
 			}
 		});
 		btnCikart.setBounds(77, 190, 66, 23);
@@ -190,8 +192,9 @@ public class frmAnaSayfa {
 		JButton btnCarp = new JButton("\u00C7arp");
 		btnCarp.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				s1 = Integer.parseInt(textField.getText());
+				s1 = Double.parseDouble(textField.getText());
 				opr = "*";
+				textField.setText("*");
 			}
 		});
 		btnCarp.setBounds(10, 224, 62, 23);
@@ -200,8 +203,9 @@ public class frmAnaSayfa {
 		JButton btnBol = new JButton("B\u00F6l");
 		btnBol.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				s1 = Integer.parseInt(textField.getText());
+				s1 = Double.parseDouble(textField.getText());
 				opr = "/";
+				textField.setText("/");
 			}
 		});
 		btnBol.setBounds(77, 224, 66, 23);
@@ -210,14 +214,35 @@ public class frmAnaSayfa {
 		JButton btn9 = new JButton("9");
 		btn9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("9");
+				textField.setText(textField.getText()+"9");
 			}
 		});
 		btn9.setBounds(102, 126, 41, 23);
 		frmAnaForm.getContentPane().add(btn9);
 		
 		JButton btnNewButton_1 = new JButton("C");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			textField.setText("");
+			s1=1;
+			s2=1;
+			}
+		});
 		btnNewButton_1.setBounds(171, 56, 62, 53);
 		frmAnaForm.getContentPane().add(btnNewButton_1);
+		
+		JButton btnNewButton_2 = new JButton(".");
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				textField.setText(textField.getText()+".");
+			}
+		});
+		btnNewButton_2.setBounds(102, 160, 41, 23);
+		frmAnaForm.getContentPane().add(btnNewButton_2);
+		
+		JButton btnNewButton_3 = new JButton("-");
+		btnNewButton_3.setFont(new Font("Tahoma", Font.PLAIN, 9));
+		btnNewButton_3.setBounds(10, 160, 41, 23);
+		frmAnaForm.getContentPane().add(btnNewButton_3);
 	}
 }

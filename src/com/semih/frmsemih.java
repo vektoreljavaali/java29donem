@@ -109,7 +109,8 @@ public class frmsemih {
 		Btn1 = new JButton("1");
 		Btn1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("1");
+				//textField.setText("1");
+				textField.setText(textField.getText()+Btn1.getText());
 				
 			}
 		});
@@ -120,7 +121,8 @@ public class frmsemih {
 		Btn2 = new JButton("2");
 		Btn2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("2");
+				//textField.setText("2");
+				textField.setText(textField.getText()+Btn2.getText());
 			}
 		});
 		Btn2.setBackground(new Color(248, 248, 255));
@@ -130,7 +132,8 @@ public class frmsemih {
 		Btn3 = new JButton("3");
 		Btn3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("3");
+				//textField.setText("3");
+				textField.setText(textField.getText()+Btn3.getText());
 			}
 		});
 		Btn3.setBackground(new Color(248, 248, 255));
@@ -140,7 +143,8 @@ public class frmsemih {
 		Btn4 = new JButton("4");
 		Btn4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("4");
+				//textField.setText("4");
+				textField.setText(textField.getText()+Btn4.getText());
 			}
 		});
 		Btn4.setBackground(new Color(248, 248, 255));
@@ -150,7 +154,8 @@ public class frmsemih {
 		Btn5 = new JButton("5");
 		Btn5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("5");
+				//textField.setText("5");
+				textField.setText(textField.getText()+Btn5.getText());
 			}
 		});
 		Btn5.setBackground(new Color(248, 248, 255));
@@ -160,7 +165,8 @@ public class frmsemih {
 		Btn6 = new JButton("6");
 		Btn6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("6");
+				//textField.setText("6");
+				textField.setText(textField.getText()+Btn6.getText());
 			}
 		});
 		Btn6.setBackground(new Color(248, 248, 255));
@@ -170,7 +176,8 @@ public class frmsemih {
 		Btn7 = new JButton("7");
 		Btn7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("7");
+				//textField.setText("7");
+				textField.setText(textField.getText()+Btn7.getText());
 			}
 		});
 		Btn7.setBackground(new Color(248, 248, 255));
@@ -180,7 +187,8 @@ public class frmsemih {
 		Btn8 = new JButton("8");
 		Btn8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("8");
+				//textField.setText("8");
+				textField.setText(textField.getText()+Btn8.getText());
 			}
 		});
 		Btn8.setBackground(new Color(248, 248, 255));
@@ -190,7 +198,8 @@ public class frmsemih {
 		Btn9 = new JButton("9");
 		Btn9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("9");
+				//textField.setText("9");
+				textField.setText(textField.getText()+Btn9.getText());
 			}
 		});
 		Btn9.setBackground(new Color(248, 248, 255));
@@ -200,7 +209,8 @@ public class frmsemih {
 		Btn0 = new JButton("0");
 		Btn0.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("0");
+				//textField.setText("0");
+				textField.setText(textField.getText()+Btn0.getText());
 			}
 		});
 		Btn0.setBackground(new Color(248, 248, 255));

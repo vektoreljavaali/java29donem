@@ -78,8 +78,10 @@ public class frmAnaSayfa {
 				switch (opr) {
 				case "+":textField.setText(islem.toplama(s1, s2)+""); sonuc=islem.toplama(s1, s2);	break;
 				case "-":textField.setText(islem.cikartma(s1, s2)+"");sonuc=islem.cikartma(s1, s2);	break;
-				case "*":textField.setText(islem.carpma(s1, s2)+"");sonuc=islem.carpma(s1, s2);	break;
-				case "/" :textField.setText(islem.bolme(s1, s2)+"");sonuc=islem.bolme(s1, s2);		break;
+				case "*":textField.setText(islem.carpma(s1, s2)+"");sonuc=islem.carpma(s1, s2);	
+		break;
+				case "/" :textField.setText(islem.bolme(s1, s2)+"");sonuc=islem.bolme(s1, s2);	
+		break;
 				}
 				opr="=";
 			}

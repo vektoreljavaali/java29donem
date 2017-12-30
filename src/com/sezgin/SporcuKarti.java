@@ -1,4 +1,4 @@
-package Odev;
+package com.sezgin;
 
 import java.awt.EventQueue;
 

@@ -118,19 +118,19 @@ public class frmTakip {
 		btncýkýs.setBounds(307, 212, 89, 23);
 		frmMteriTakipFormu.getContentPane().add(btncýkýs);
 		
-		JFormattedTextField txttarih = new JFormattedTextField(new MaskFormatter("##-##-####"));
+		txttarih = new JFormattedTextField(new MaskFormatter("##-##-####"));
 		txttarih.setBounds(119, 39, 272, 20);
 		frmMteriTakipFormu.getContentPane().add(txttarih);
 		
-		JFormattedTextField txtgirissaati = new JFormattedTextField(new MaskFormatter("##:##:## - hh:mm:ss"));
+		txtgirissaati = new JFormattedTextField(new MaskFormatter("##:##:## - hh:mm:ss"));
 		txtgirissaati.setBounds(119, 98, 272, 20);
 		frmMteriTakipFormu.getContentPane().add(txtgirissaati);
 		
-		JFormattedTextField txtcýkýssaati = new JFormattedTextField(new MaskFormatter("##:##:## - hh:mm:ss"));
+		txtcýkýssaati = new JFormattedTextField(new MaskFormatter("##:##:## - hh:mm:ss"));
 		txtcýkýssaati.setBounds(119, 123, 272, 20);
 		frmMteriTakipFormu.getContentPane().add(txtcýkýssaati);
 		
-		JFormattedTextField txtmusteriid = new JFormattedTextField(new MaskFormatter("########"));
+		txtmusteriid = new JFormattedTextField(new MaskFormatter("########"));
 		txtmusteriid.setBounds(119, 8, 272, 20);
 		frmMteriTakipFormu.getContentPane().add(txtmusteriid);
 	}

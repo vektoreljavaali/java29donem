@@ -165,7 +165,7 @@ public class frmMusteriKayit {
 		btniki.setBounds(421, 481, 89, 23);
 		frmSporMerkeziMteri.getContentPane().add(btniki);
 		
-		JFormattedTextField txttckimlik = new JFormattedTextField(new MaskFormatter("###########"));
+		txttckimlik = new JFormattedTextField(new MaskFormatter("###########"));
 		txttckimlik.setBounds(119, 8, 159, 20);
 		frmSporMerkeziMteri.getContentPane().add(txttckimlik);
 	}

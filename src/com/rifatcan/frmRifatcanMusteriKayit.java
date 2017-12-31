@@ -20,7 +20,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 
-public class frmMusteriKayit {
+public class frmRifatcanMusteriKayit extends frmRifatcanMusteriTakip {
 
 	private JFrame frmSporMerkeziMteri;
 	private JTextField txtadi;
@@ -39,7 +39,7 @@ public class frmMusteriKayit {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					frmMusteriKayit window = new frmMusteriKayit();
+					frmRifatcanMusteriKayit window = new frmRifatcanMusteriKayit();
 					window.frmSporMerkeziMteri.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -51,7 +51,7 @@ public class frmMusteriKayit {
 	/**
 	 * Create the application.
 	 */
-	public frmMusteriKayit() {
+	public frmRifatcanMusteriKayit() {
 		try {
 			initialize();
 		} catch (ParseException e) {

@@ -15,7 +15,7 @@ import javax.swing.JFormattedTextField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class frmTakip {
+public class frmRifatcanMusteriTakip extends JFrame {
 
 	private JFrame frmMteriTakipFormu;
 	private JLabel lblDurum;
@@ -34,7 +34,7 @@ public class frmTakip {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					frmTakip window = new frmTakip();
+					frmRifatcanMusteriTakip window = new frmRifatcanMusteriTakip();
 					window.frmMteriTakipFormu.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -46,7 +46,7 @@ public class frmTakip {
 	/**
 	 * Create the application.
 	 */
-	public frmTakip() {
+	public frmRifatcanMusteriTakip() {
 		try {
 			initialize();
 		} catch (ParseException e) {

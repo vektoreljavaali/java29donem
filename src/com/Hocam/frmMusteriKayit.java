@@ -64,6 +64,7 @@ public class frmMusteriKayit {
 		frmSporMerkeziMteri.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmSporMerkeziMteri.getContentPane().setLayout(null);
 		
+		
 		JLabel lblTcKimlik = new JLabel("T.C. Kimlik");
 		lblTcKimlik.setBounds(10, 26, 83, 14);
 		frmSporMerkeziMteri.getContentPane().add(lblTcKimlik);
@@ -137,7 +138,7 @@ public class frmMusteriKayit {
 			ekraniTemizle();	
 			}
 		});
-		btnYeniKayt.setBounds(10, 358, 91, 23);
+		btnYeniKayt.setBounds(10, 358, 91, 54);
 		frmSporMerkeziMteri.getContentPane().add(btnYeniKayt);
 		
 		JButton btnKaydet = new JButton("Kaydet");
